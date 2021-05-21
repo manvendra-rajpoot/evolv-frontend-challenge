@@ -1,0 +1,57 @@
+.addDish{
+    border-radius: 5px;
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 10px auto 10px auto;
+    color: rgb(39, 38, 38);
+    width: 50%;
+    min-width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(110, 109, 109);
+    background-color: rgb(250, 249, 249);
+    font-family: cursive;
+}
+.addDish>h3{
+    text-align: center;
+}
+form> input{
+    height: 20px;
+    padding: 6px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 95%;
+    border-radius: 5px;
+    outline-width: 0;
+}
+.inpNutrients{
+    display: flex;
+    flex-direction: column;
+
+}
+.inpNutrients>input{
+    height: 20px;
+    padding: 6px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 100px;
+    border-radius: 5px;
+    outline-width: 0;
+}
+form>button{
+    cursor: pointer;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: x-small;
+    font-family: cursive;
+    color: rgb(65, 68, 68);
+}
+form>button:hover{
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.03);
+}
+#addBtn{
+    background-color: #f0c14b;
+}

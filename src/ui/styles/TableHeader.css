@@ -1,0 +1,21 @@
+.tableHeader {
+    display: flex;
+    font-family: cursive;
+    color: rgb(65, 68, 68);
+    border: 1px solid rgb(66, 42, 42);
+    background-color: rgb(250, 247, 221);
+    margin: 5px;
+    border-radius: 5px;
+}
+.tableHeader div{
+    padding-left: 20px;
+}
+.dishName {
+    flex: 0.45;
+}
+.nutrientContent {
+    flex: 0.1;
+}
+.action {
+    flex: 0.1;
+}

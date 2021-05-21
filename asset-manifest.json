@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/evolv-frontend-challenge/static/css/main.7922441e.chunk.css",
+    "main.js": "/evolv-frontend-challenge/static/js/main.d49dd49b.chunk.js",
+    "main.js.map": "/evolv-frontend-challenge/static/js/main.d49dd49b.chunk.js.map",
+    "runtime-main.js": "/evolv-frontend-challenge/static/js/runtime-main.2a28562e.js",
+    "runtime-main.js.map": "/evolv-frontend-challenge/static/js/runtime-main.2a28562e.js.map",
+    "static/js/2.3507be38.chunk.js": "/evolv-frontend-challenge/static/js/2.3507be38.chunk.js",
+    "static/js/2.3507be38.chunk.js.map": "/evolv-frontend-challenge/static/js/2.3507be38.chunk.js.map",
+    "index.html": "/evolv-frontend-challenge/index.html",
+    "static/css/main.7922441e.chunk.css.map": "/evolv-frontend-challenge/static/css/main.7922441e.chunk.css.map",
+    "static/js/2.3507be38.chunk.js.LICENSE.txt": "/evolv-frontend-challenge/static/js/2.3507be38.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a28562e.js",
+    "static/js/2.3507be38.chunk.js",
+    "static/css/main.7922441e.chunk.css",
+    "static/js/main.d49dd49b.chunk.js"
+  ]
+}

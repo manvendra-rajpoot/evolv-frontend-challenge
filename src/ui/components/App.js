@@ -9,23 +9,24 @@ import Register from './Register';
 import User from './User';
 
 const App = () => {
+  const appName = 'evolv-frontend-challenge';
   return (
     <BrowserRouter>
       <div className="app">
         <Switch>
-          <Route path='/edit/:dishId'>
+          <Route path={`/${appName}/edit/:dishId`}>
             <EditDish />
           </Route>
-          <Route path='/login'>
+          <Route path={`/${appName}/login`}>
             <Login />
           </Route>
-          <Route path='/register'>
+          <Route path={`/${appName}/register`}>
             <Register />
           </Route>
-          <Route path='/admin'>
+          <Route path={`/${appName}/admin`}>
             <Admin />
           </Route>
-          <Route path='/'>
+          <Route path={`/${appName}/`}>
             <Header />
             <User />
           </Route>

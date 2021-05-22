@@ -4,35 +4,37 @@ import '../styles/Header.css';
 
 const Header = () => {
     const location = useLocation();
+    const appName = 'evolv-frontend-challenge';
 
     return (
         <div className='header'>
-            <Link to='/'>
+            <Link to={`/${appName}/`}>
                 <span id="appTitle">Food Quota</span>
             </Link>
             <div>
-                {location.pathname === '/admin'
+                {location.pathname === `/${appName}/admin`
                     ? 
                     <div className="controlBtn">
-                        <Link to='/'>
+                        <Link to={`/${appName}`}>
                             <button id="backToHomeBtn">Back to Home</button>
                         </Link>
                     </div>
                     :
                     <div className="controlBtn">
-                        <Link to='/admin'>
+                        <Link to={`/${appName}/admin`}>
                             <button id="goToAdminDashBtn">Go to Admin Dashboard</button>
                         </Link>
-                        {location.pathname === '/' 
+                        {location.pathname !== `/${appName}`
                             ?
+                            <></>
+                            :
                             <div className="h">
                                 <button id="logInBtn">Login</button>
                                 <button id="logOutBtn">Logout</button>
                             </div>
-                            :
-                            <></>
                         }
                     </div>
+                    
                 }                
             </div>
         </div>

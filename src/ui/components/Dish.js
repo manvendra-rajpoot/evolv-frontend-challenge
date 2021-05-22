@@ -14,6 +14,8 @@ const Dish = ({id, title, image, protein, fats, carbs}) => {
         dispatch(removeDish(id));
     };
 
+    const appName = 'evolv-frontend-challenge';
+
     return (
         <div className='dish'>
             <div className='dishInfo'>
@@ -33,10 +35,10 @@ const Dish = ({id, title, image, protein, fats, carbs}) => {
                 <span style={{ width: "100%", textAlign: "center", color: "rgb(65, 68, 68)"}} >{parseInt(protein)*4 + parseInt(fats)*9 + parseInt(carbs)*4}</span>
             </div>
 
-            {location.pathname ==='/admin' 
+            {location.pathname ===`/${appName}/admin` 
                 ?
                 <div className='controlBtn'>
-                    <Link to={`/edit/${id}`}><button id='editBtn'>Edit</button> </Link>
+                    <Link to={`/${appName}/edit/${id}`}><button id='editBtn'>Edit</button> </Link>
                     <button onClick={removeFromStore} id='removeBtn'>Remove</button>
                 </div> 
                 : 

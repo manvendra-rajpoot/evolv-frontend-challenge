@@ -24,17 +24,16 @@ const Header = () => {
                         <Link to={`/${appName}/admin`}>
                             <button id="goToAdminDashBtn">Go to Admin Dashboard</button>
                         </Link>
-                        {location.pathname !== `/${appName}/`
+                        {location.pathname === `/${appName}`
                             ?
-                            <></>
-                            :
                             <div>
                                 <button id="logInBtn">Login</button>
                                 <button id="logOutBtn">Logout</button>
                             </div>
+                            :
+                            <></>
                         }
                     </div>
-                    
                 }                
             </div>
         </div>
